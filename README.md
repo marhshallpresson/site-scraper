@@ -34,6 +34,31 @@ custom output directory:
 python site_scraper.py https://example.com --output my_sites
 ```
 
+same-domain resource mode (default):
+```bash
+python site_scraper.py https://example.com --resource-same-domain-only
+```
+
+disable javascript url mining:
+```bash
+python site_scraper.py https://example.com --skip-js-url-mining
+```
+
+write a custom manifest file:
+```bash
+python site_scraper.py https://example.com --manifest-file crawl-manifest.json
+```
+
+parallel batch scrape from config:
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\run_parallel_scrape.ps1
+```
+
+extract normalized content for Miss Nova site:
+```bash
+python .\scripts\extract_pageant_content.py --scraped-root .\scraped_site_test2 --output-dir .\content
+```
+
 ## interactive mode commands
 - `done` - start scraping the current state
 - `help` - show help message

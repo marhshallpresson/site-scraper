@@ -35,3 +35,4 @@ env/
 scraped_site/
 logs/
 *.log reference_site/
+miss-nova-site
