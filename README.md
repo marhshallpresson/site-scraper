@@ -56,7 +56,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\run_parallel_scrape.ps1
 
 extract normalized content for Miss Nova site:
 ```bash
-python .\scripts\extract_pageant_content.py --scraped-root .\scraped_site_test2 --output-dir .\content
+python .\scripts\content.py --scraped-root .\scraped_site_test2 --output-dir .\content
 ```
 
 ## interactive mode commands
